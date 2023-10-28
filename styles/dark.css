@@ -23,6 +23,7 @@
     --border-w-auto: 0px;
     --border-w-neon: 1px;
     --border-w-day: 0px;
-    --fz-title: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+    --fz-title: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --fz-standard: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     --rec-display: block;
 }

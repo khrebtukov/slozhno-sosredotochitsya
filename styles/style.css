@@ -306,6 +306,7 @@ a:focus-visible {
 
     .header__title {
         margin-inline-start: -20px;
+        font-size: var(--fz-standard);
     }
 
     .decorated-zone::before {
@@ -348,7 +349,9 @@ a:focus-visible {
         gap: 20px;
         margin-block-start: 20px;
     }
-
+    .footer-title {
+        font-size: var(--fz-standard);
+    }
     .footer {
         padding: 20px;
     }
