@@ -1,7 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+    /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
     color: var(--basic-tc, #f1b2ce);
     font-family: var(--basic-ff, monospace);
     background: top / cover no-repeat fixed var(--cover-image) var(--background-color);
@@ -39,6 +39,7 @@
     padding: 10px;
     block-size: 100vh;
     inline-size: 100%;
+    min-height: 668px;
 }
 
 .decorated-zone::before {
@@ -136,21 +137,14 @@
 }
 
 .header__content {
+    font-weight: 700;
+    line-height: 130%;
     grid-column: 2/3;
     align-self: center;
     height: fit-content;
     font-size: var(--basic-fz);
     background-color: var(--basic-bc);
-}
-
-.header__decoration {
-    font-weight: 700;
-    line-height: 130%;
-}
-
-.title-decoration {
     color: var(--subtitle-color);
-    background-color: var(--basic-bc);
 }
 
 .container {
@@ -170,7 +164,11 @@
     gap: 20px;
 }
 
-.container__description-title {
+.container__description-question .title {
+    margin-block-end: 20px;
+}
+
+.title {
     margin-block-end: 20px;
     color: var(--common-color);
     font-weight: 700;
@@ -178,18 +176,24 @@
     line-height: 130%;
 }
 
-.container__description-subtitle {
+.subtitle {
     font-weight: 700;
     font-size: var(--basic-fz);
     line-height: 130%;
     background-color: var(--basic-bc);
+    color: var(--subtitle-color);
+}
+
+h4.subtitle {
+    font-weight: 400;
 }
 
 .container-size {
-    margin-block-start: 30px;
+    margin-block-start: 0;
+    margin-block-end: 60px;
 }
 
-.container__text {
+.text {
     margin-block-start: 10px;
     margin-block-end: 20px;
 }
@@ -201,19 +205,17 @@
     line-height: 130%;
 }
 
+.container__decoration > .subtitle:first-child {
+    margin-block-end: 20px;
+}
+
 .container__card {
     display: grid;
     grid-template-columns: 1fr;
 }
 
-.container__card-decoration {
-    font-weight: 400;
-    font-size: var(--basic-fz);
-    line-height: 130%;
-    background-color: var(--basic-bc);
-}
-
-.container__link {
+.link {
+    color: var(--basic-tc);
     text-decoration: none;
     text-shadow: 1px 2px 0 var(--accent-color);
 }
@@ -281,6 +283,7 @@ a:focus-visible {
     margin-block-start: 40px;
     padding: 10px;
     block-size: 100vh;
+    min-height: 668px;
 }
 
 .footer-title {
@@ -327,11 +330,6 @@ a:focus-visible {
         grid-template-columns: 1fr 2fr;
         gap: 20px;
         margin-block-start: 60px;
-        margin-block-end: 60px;
-    }
-
-    .container-size {
-        margin-block-start: 0;
         margin-block-end: 60px;
     }
 
