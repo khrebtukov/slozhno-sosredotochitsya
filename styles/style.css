@@ -156,7 +156,6 @@
     display: grid;
     grid-template-columns: 1fr;
     margin-block-start: 40px;
-    margin-block-end: 10px;
 }
 
 .container__description-question {
@@ -190,7 +189,7 @@ h4.subtitle {
 }
 
 .container-size {
-    margin-block-start: 0;
+    margin-block-start: 20px;
     margin-block-end: 50px;
 }
 
