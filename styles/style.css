@@ -156,6 +156,7 @@
     display: grid;
     grid-template-columns: 1fr;
     margin-block-start: 40px;
+    margin-block-end: 30px;
 }
 
 .container__description-question {
